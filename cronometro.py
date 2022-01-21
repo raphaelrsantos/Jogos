@@ -7,7 +7,7 @@ def countdown(num_of_secs):
         # Verificação se o jogo ainda está ativo (leitura do "semáforo")
         arquivo = open('SEMAFORO', 'r+')
         semaforo = arquivo.readline()
-        if semaforo == 'FINALIZAR PROGRAMA':
+        if semaforo == 'FINALIZAR PROGRAMA' or semaforo == 'VOLTAR AO MENU':
             break
         # Funcionamento do cronomêtro:
         m, s = divmod(int(num_of_secs), 60)
@@ -28,3 +28,5 @@ def countdown(num_of_secs):
 arquivo = open('TEMPO', 'r+')
 tempo = arquivo.readline()
 countdown(int(tempo))
+
+

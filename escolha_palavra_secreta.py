@@ -35,6 +35,7 @@ def gerador_10_palavras_portugues():
         for k, n in dic.items():
             if categoria_escolhida == k:
                 categoria_escolhida = n
+                break
         url = url + "&fs2=" + categoria_escolhida
     # lista_categorias = ['SEM CATEGORIA', 'ALIMENTOS', 'ANIMAIS', 'CORES', 'CORPO HUMANO']
     # sg.popup_quick_message(f'CATEGORIA ESCOLHIDA: {lista_categorias[int(categoria_escolhida)-1]}', font=('Large', 10), button_type=5,
