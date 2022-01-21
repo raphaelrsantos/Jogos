@@ -1,5 +1,4 @@
 import PySimpleGUI as sg
-import os
 
 enforcou = False
 ganhou = False

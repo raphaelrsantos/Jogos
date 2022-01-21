@@ -2,9 +2,6 @@ import time
 import PySimpleGUI as sg
 
 
-# import os
-
-
 def countdown(num_of_secs):
     while num_of_secs:
         # Verificação se o jogo ainda está ativo (leitura do "semáforo")
