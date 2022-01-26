@@ -4,12 +4,12 @@ import PySimpleGUI as sg
 
 def countdown(num_of_secs):
     while num_of_secs:
-        # Verificação se o jogo ainda está ativo (leitura do "semáforo")
+        # VERIFICAÇÃO SE O JOGO AINDA ESTÁ ATIVO (LEITURA DO "SEMÁFORO")
         arquivo = open('SEMAFORO', 'r+')
         semaforo = arquivo.readline()
-        if semaforo == 'FINALIZAR PROGRAMA' or semaforo == 'VOLTAR AO MENU':
+        if semaforo == 'FINALIZAR PROGRAMA':
             break
-        # Funcionamento do cronomêtro:
+        # FUNCIONAMENTO DO CRONOMÊTRO:
         m, s = divmod(int(num_of_secs), 60)
         f'{m:02d}:{s:02d}'
         time.sleep(1)
@@ -19,7 +19,7 @@ def countdown(num_of_secs):
         # caso o tempo se esgote:
         if num_of_secs == 0:
             print('\nTEMPO ESGOTADO! APERTE QUALQUER TECLA PARA SAIR!' * 10)
-    # Esgotado o tempo, o "semáforo" é atualizado:
+    # ESGOTADO O TEMPO, O "SEMÁFORO" É ATUALIZADO:
     arquivo = open('SEMAFORO', 'w+')
     arquivo.truncate(0)
     arquivo.writelines(f'FINALIZAR PROGRAMA')

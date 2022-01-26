@@ -1,4 +1,6 @@
-# Jogos Advinhação e Forca
+# Jogos 
+
+**Advinhação / Forca / Par ou Impar / etc**
 
 Jogos criados unicamente para fins didáticos. O processamento e a otimização gráfica não foram critérios para seu desenvolvimento.
 
